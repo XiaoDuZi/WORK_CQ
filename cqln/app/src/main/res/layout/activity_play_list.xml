@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:background="@color/seventy_black"
+              android:orientation="vertical"
+              android:gravity="left"
+    >
+
+    <ListView
+        android:id="@+id/lv_play"
+        android:layout_width="@dimen/dp350"
+        android:layout_height="@dimen/dp500"
+        android:background="@color/fivety_black"
+        android:layout_gravity="left"
+        android:listSelector="@color/recentplay_color"
+        >
+
+    </ListView>
+
+</LinearLayout>

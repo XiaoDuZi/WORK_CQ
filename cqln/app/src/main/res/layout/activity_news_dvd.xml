@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.cq.ln.activity.SpecialDetailActivity">
+
+
+    <FrameLayout
+        android:id="@+id/Left_Warp_DVD"
+        android:layout_width="@dimen/dp244"
+        android:layout_height="match_parent"
+        android:background="@mipmap/user_center_left"
+        android:paddingLeft="@dimen/dp66">
+
+        <ImageView
+            style="@style/setEnableFocusNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp66"
+            android:layout_marginTop="@dimen/dp50"
+            android:src="@mipmap/page_pre_have_nonu" />
+
+
+        <Button
+            android:id="@+id/btnNewsDVD"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp158"
+            android:layout_height="@dimen/dp62"
+            android:layout_marginTop="@dimen/dp100"
+            android:background="@null"
+            android:nextFocusDown="@+id/btnNewsDVD"
+            android:nextFocusRight="@+id/listFilterChildSong"
+            android:nextFocusUp="@+id/btnNewsDVD"
+            android:text="新碟抢先听"
+            android:textColor="@drawable/selector_item_text_color_for_focus"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+        <!-- <Button
+             android:id="@+id/btnDiscRecommend"
+             style="@style/focusAndSetTag"
+             android:layout_width="@dimen/dp158"
+             android:layout_height="@dimen/dp62"
+             android:layout_marginTop="@dimen/dp172"
+             android:background="@null"
+             android:nextFocusDown="@+id/btnMusicStyle"
+             android:nextFocusRight="@+id/listFilter"
+             android:nextFocusUp="@+id/btnOnlineSearch"
+             android:text="唱片推荐"
+             android:textColor="@drawable/selector_item_text_color_for_focus"
+             android:textSize="@dimen/sp20"
+             android:textStyle="bold" />
+
+         <Button
+             android:id="@+id/btnMusicStyle"
+             style="@style/focusAndSetTag"
+             android:layout_width="@dimen/dp158"
+             android:layout_height="@dimen/dp62"
+             android:layout_marginTop="@dimen/dp244"
+             android:background="@null"
+             android:nextFocusDown="@+id/btnSigner"
+             android:nextFocusRight="@+id/listFilter"
+             android:nextFocusUp="@+id/btnDiscRecommend"
+             android:text="音乐风格"
+             android:textColor="@drawable/selector_item_text_color_for_focus"
+             android:textSize="@dimen/sp20"
+             android:textStyle="bold" />
+
+         <Button
+             android:id="@+id/btnSigner"
+             style="@style/focusAndSetTag"
+             android:layout_width="@dimen/dp158"
+             android:layout_height="@dimen/dp62"
+             android:layout_marginTop="@dimen/dp316"
+             android:background="@null"
+             android:nextFocusDown="@+id/btnSigner"
+             android:nextFocusRight="@+id/listFilter"
+             android:nextFocusUp="@+id/btnMusicStyle"
+             android:text="艺术家"
+             android:textColor="@drawable/selector_item_text_color_for_focus"
+             android:textSize="@dimen/sp20"
+             android:textStyle="bold" />-->
+
+        <ImageView
+            style="@style/setEnableFocusNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp66"
+            android:layout_marginTop="@dimen/dp650"
+            android:src="@mipmap/page_next_have_nonu" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/Orther_RightWarpDVD"
+        android:layout_width="@dimen/dp1036"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp244"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:layout_width="@dimen/dp166"
+            android:layout_height="match_parent"
+            android:background="@mipmap/user_center_left">
+
+            <ListView
+                android:id="@+id/listFilterChildSong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp40"
+                android:layout_marginTop="@dimen/dp100"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="@dimen/dp0"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/dp870"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp166"
+            android:paddingRight="@dimen/dp42">
+
+            <ImageView
+                android:id="@+id/image_Page_PreDVD"
+                style="@style/setEnableFocusNO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp70"
+                android:background="@null"
+                android:src="@mipmap/page_pre_have_nonu" />
+
+            <GridView
+                android:id="@+id/gridViewResultDVD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp105"
+                android:layout_marginTop="@dimen/dp105"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:horizontalSpacing="@dimen/dp20"
+                android:listSelector="@android:color/transparent"
+                android:nextFocusLeft="@+id/listFilterChildSong"
+                android:nextFocusDown="@+id/gridViewResultDVD"
+                android:nextFocusUp="@+id/gridViewResultDVD"
+                android:numColumns="4"
+                android:paddingLeft="@dimen/dp20"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/dp20">
+
+            </GridView>
+
+
+            <ImageView
+                android:id="@+id/image_Page_NextDVD"
+                style="@style/setEnableFocusNO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp620"
+                android:background="@null"
+                android:src="@mipmap/page_next_have_more" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp640"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/txtPageNavDVD"
+                    android:layout_weight="7"
+                    android:drawableLeft="@mipmap/page_flip"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="@dimen/dp10"
+                    android:text="上下翻页"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp20" />
+
+                <TextView
+                    android:id="@+id/txtPageNavDVD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="@dimen/dp10"
+                    android:text="1/1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp20" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+</FrameLayout>

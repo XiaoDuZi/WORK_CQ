@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/face_Root"
+    style="@style/setEnableFocusYES"
+    android:layout_width="@dimen/dp120"
+    android:layout_height="@dimen/dp120"
+    android:background="@drawable/change_button_lock_bg_select2"
+    android:clickable="true">
+
+    <ImageView
+        android:id="@+id/Im_head"
+        style="@style/setEnableFocusNO"
+        android:layout_width="@dimen/dp113"
+        android:layout_height="@dimen/dp113"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp10" />
+
+    <ImageView
+        android:id="@+id/Im_check"
+        style="@style/setEnableFocusNO"
+        android:layout_width="@dimen/dp113"
+        android:layout_height="@dimen/dp113"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp10"
+        android:src="@mipmap/head_checked"
+        android:visibility="invisible" />
+
+
+</FrameLayout>

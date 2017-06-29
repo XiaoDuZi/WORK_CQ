@@ -1,0 +1,201 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- <style name="MyAppThemeFullscreen" parent="Theme.AppCompat">
+         <item name="android:windowFullscreen">true</item>
+         <item name="android:windowContentOverlay">@null</item>
+         <item name="android:windowBackground">@mipmap/splash_bg</item>
+     </style>-->
+    <style name="test" parent="android:Theme.Black.NoTitleBar.Fullscreen"></style>
+
+    <style name="MyAppThemeFullscreen" parent="Theme.AppCompat">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarSize">0dp</item>
+    </style>
+
+
+    <style name="middle_menu_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp26</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@drawable/main_top_menu_text_color_check_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    <!--<item name="android:background">@drawable/bg_radiogroup_btn</item>-->
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:padding">@dimen/dp10</item>
+        <item name="android:drawableTop">@mipmap/search_icon</item>
+        <item name="android:drawablePadding">@dimen/dp10</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!--绑定FocusTag-->
+    <style name="focusAndSetTag">
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:tag">@string/tagForFocus</item>
+    </style>
+
+    <style name="setEnableFocusNO">
+        <item name="android:enabled">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="setEnableFocusYES">
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+
+    <style name="user_center_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <!--<item name="android:textColor">@drawable/textview_selector</item>-->
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <!-- <item name="android:layout_weight">1</item>-->
+        <item name="android:enabled">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_margin">@dimen/dp20</item>
+        <item name="android:textSize">@dimen/sp20</item>
+    </style>
+
+    <!-- 自定义Dialog -->
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.01dp</item>
+        <item name="android:background">@color/gray_a6</item>
+    </style>
+
+    <style name="theme_dialog" parent="@android:style/Theme.Dialog">
+        <!-- <item name="android:windowFullscreen">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item> -->
+
+        <item name="android:background">@color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item> -->
+    </style>
+
+    <style name="keybord_letter_style" parent="focusAndSetTag">
+        <item name="android:layout_width">@dimen/dp62</item>
+        <item name="android:layout_height">@dimen/dp62</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#965150</item>
+        <item name="android:textSize">@dimen/sp24</item>
+    </style>
+
+
+    <style name="keybord_option_style" parent="focusAndSetTag">
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#965150</item>
+        <item name="android:textSize">@dimen/sp20</item>
+        <item name="android:paddingBottom">@dimen/dp15</item>
+        <item name="android:paddingTop">@dimen/dp15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/dp0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="t9_keybord_option_style" parent="focusAndSetTag">
+        <item name="android:textColor">#965150</item>
+        <item name="android:textSize">@dimen/sp22</item>
+        <item name="android:paddingBottom">@dimen/dp8</item>
+        <item name="android:paddingTop">@dimen/dp8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/dp108</item>
+        <item name="android:layout_height">@dimen/dp86</item>
+        <item name="android:background">@mipmap/t9_button_bg</item>
+    </style>
+
+    <style name="t9_keybord_extendview_style">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp34</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="t9_keyboard_small_numsize">
+        <item name="android:textSize">@dimen/sp22</item>
+    </style>
+
+    <style name="t9_keyboard_big_lettersize">
+        <item name="android:textSize">@dimen/sp36</item>
+    </style>
+
+    <style name="dialog_Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp3</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="dialog_Line_ver">
+        <item name="android:layout_width">@dimen/dp3</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

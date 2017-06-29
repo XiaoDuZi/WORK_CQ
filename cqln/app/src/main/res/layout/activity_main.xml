@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/activity_RootView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:id="@+id/focusView"
+            style="@style/setEnableFocusNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/negpx57"
+            android:layout_marginTop="@dimen/dp86"
+            android:src="@mipmap/nav_check_unfocus"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activity.MainActivity">
+
+            <ImageView
+                android:id="@+id/utvgoLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp55"
+                android:layout_marginTop="@dimen/dp10"
+                android:src="@mipmap/main_logo_utvgo"/>
+
+            <RelativeLayout
+                android:id="@+id/topWarp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/utvgoLogo"
+                android:layout_marginLeft="@dimen/dp45"
+                android:layout_marginRight="@dimen/dp45"
+                android:focusable="false">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/main_logo_hifi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:text="@string/test_tip"
+                    android:textSize="@dimen/sp30"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/UserWrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/RecentWrap"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/MainIBtn_User"
+                        style="@style/focusAndSetTag"
+                        android:layout_width="@dimen/dp70"
+                        android:layout_height="@dimen/dp70"
+                        android:background="@drawable/main_top_myinfo_selector"
+                        android:padding="@dimen/dp13"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/txtUsercenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="个人中心"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/RecentWrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_toLeftOf="@+id/SearchWrap"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/MainIBtn_Recent"
+                        style="@style/focusAndSetTag"
+                        android:layout_width="@dimen/dp70"
+                        android:layout_height="@dimen/dp70"
+                        android:background="@null"
+                        android:src="@drawable/main_top_recently_selector"/>
+
+                    <TextView
+                        android:id="@+id/txtRecentPlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/txtRecentPlay"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SearchWrap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp8"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/MainIBtn_Search"
+                        style="@style/focusAndSetTag"
+                        android:layout_width="@dimen/dp70"
+                        android:layout_height="@dimen/dp70"
+                        android:background="@null"
+                        android:src="@drawable/main_top_search_selector"/>
+
+                    <TextView
+                        android:id="@+id/txtSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="搜索"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioWarp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topWarp"
+                android:layout_marginLeft="@dimen/dp45"
+                android:layout_marginRight="@dimen/dp250"
+                android:layout_marginTop="@dimen/dp10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RBbtnHandPick"
+                    style="@style/middle_menu_style"
+                    android:nextFocusRight="@+id/RBtnChildSong"
+                    android:text="@string/string_recommend"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnChildSong"
+                    style="@style/middle_menu_style"
+                    android:nextFocusLeft="@+id/RBbtnHandPick"
+                    android:nextFocusRight="@+id/RBtnHiFi"
+                    android:text="@string/string_child_song"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnHiFi"
+                    style="@style/middle_menu_style"
+                    android:nextFocusLeft="@+id/RBtnChildSong"
+                    android:nextFocusRight="@+id/RBtnPopular"
+                    android:text="@string/string_hifi"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnPopular"
+                    style="@style/middle_menu_style"
+                    android:nextFocusDown="@+id/effPopular_One"
+                    android:nextFocusLeft="@+id/RBtnHiFi"
+                    android:nextFocusRight="@+id/RBtnClass"
+                    android:text="@string/string_popular"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnClass"
+                    style="@style/middle_menu_style"
+                    android:nextFocusDown="@+id/effClass_One"
+                    android:nextFocusLeft="@+id/RBtnPopular"
+                    android:nextFocusRight="@+id/RBtnJazz"
+                    android:text="@string/string_class"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnJazz"
+                    style="@style/middle_menu_style"
+                    android:nextFocusDown="@+id/effJazz_One"
+                    android:nextFocusLeft="@+id/RBtnClass"
+                    android:nextFocusRight="@+id/RBtnNation"
+                    android:text="@string/string_jazz"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnNation"
+                    style="@style/middle_menu_style"
+                    android:nextFocusDown="@+id/effNation_One"
+                    android:nextFocusLeft="@+id/RBtnJazz"
+                    android:nextFocusRight="@+id/RBtnFree"
+                    android:text="@string/string_nation"/>
+
+                <RadioButton
+                    android:id="@+id/RBtnFree"
+                    style="@style/middle_menu_style"
+                    android:nextFocusDown="@+id/effFree_One"
+                    android:nextFocusLeft="@+id/RBtnNation"
+                    android:nextFocusRight="@+id/RBtnFree"
+                    android:text="@string/string_free"/>
+
+            </RadioGroup>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/mViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/radioWarp"
+                android:layout_marginTop="@dimen/negdp10"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:focusable="false"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txttipStbid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"/>
+
+        <TextView
+            android:id="@+id/txttip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp20"/>
+
+        <!--首页弹层活动专用-->
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            tools:context=".activity.MainActivity"/>
+
+
+    </FrameLayout>
+
+</FrameLayout>

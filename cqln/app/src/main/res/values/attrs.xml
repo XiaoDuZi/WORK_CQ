@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="item_square">
+        <attr name="src" format="integer" />
+        <attr name="text" format="string" />
+    </declare-styleable>
+
+    <!-- 顶层控件属性 -->
+    <declare-styleable name="mainUpView">
+        <attr name="isTvScreen" format="boolean" />
+        <attr name="isDrawUpRect" format="boolean" />
+        <attr name="upImageRes" format="reference" />
+        <attr name="shadowImageRes" format="reference" />
+    </declare-styleable>
+
+    <!--横向SmoothHorizontalScrollView 外部控制属性值-->
+    <declare-styleable name="SmoothHorizontalScrollView">
+        <attr name="fadingEdge" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="item_face">
+        <attr name="head" format="integer" />
+        <attr name="check" format="integer" />
+    </declare-styleable>
+
+    <!-- 圆角imageView的之定义属性 -->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

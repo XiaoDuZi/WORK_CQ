@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp19"
+    android:paddingTop="@dimen/dp19">
+
+    <LinearLayout
+        android:id="@+id/startWarp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtMusicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingTop="@dimen/dp10"
+            android:text="谢谢你的爱"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp28" />
+
+        <TextView
+            android:id="@+id/txtOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingBottom="@dimen/dp5"
+            android:paddingTop="@dimen/dp5"
+            android:text="艺术家:刘德华"
+            android:textColor="@color/gray_white"
+            android:textSize="@dimen/sp24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txttwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingTop="@dimen/dp5"
+        android:text="专辑:你麻痹你知道吗"
+        android:textColor="@color/gray_white"
+        android:textSize="@dimen/sp24" />
+
+    <TextView
+        android:id="@+id/txtDuration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_weight="0.2"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:lines="1"
+        android:paddingBottom="@dimen/dp5"
+        android:paddingTop="@dimen/dp5"
+        android:text="00:45"
+        android:textColor="@color/gray_white"
+        android:textSize="@dimen/sp24" />
+</LinearLayout>

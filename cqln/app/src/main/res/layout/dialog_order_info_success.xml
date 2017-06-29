@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentWarp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_order_dialog_transparent_"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:gravity="center"
+                android:padding="@dimen/dp4"
+                android:text="订购成功"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray_a6"
+                android:layout_marginBottom="@dimen/sp20"/>
+
+            <!-- 中间的内容 -->
+            <com.cq.ln.views.JustifyTextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="你已经成功订购HIFi音乐包月套餐，5分钟后生效，5分钟内请不要重复订购，
+                \n\r成功订购后将从您的账号扣费，如需咨询和退订，请拨打96868"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_margin="@dimen/dp20"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/dp10"
+                android:background="@drawable/change_button_lock_bg_select"
+                android:text="确认"
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

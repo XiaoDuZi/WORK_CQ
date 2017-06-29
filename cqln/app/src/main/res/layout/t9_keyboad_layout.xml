@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/string_dele"
+            style="@style/t9_keybord_option_style"
+            android:layout_height="@dimen/dp56"
+            android:layout_marginRight="@dimen/dp4"
+            android:nextFocusLeft="@+id/string_dele"
+            android:text="删除"
+            android:textSize="@dimen/sp22" />
+
+        <Button
+            android:id="@+id/key0"
+            style="@style/t9_keybord_option_style"
+            android:layout_height="@dimen/dp56"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp4"
+            android:text="0"
+            android:textSize="@dimen/sp22" />
+
+        <Button
+            android:id="@+id/string_clear"
+            style="@style/t9_keybord_option_style"
+            android:layout_height="@dimen/dp56"
+            android:layout_marginLeft="@dimen/dp4"
+            android:text="清空"
+            android:textSize="@dimen/sp22" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key1"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginRight="@dimen/dp4"
+            android:nextFocusLeft="@+id/key1"
+            android:text="1\n" />
+
+        <Button
+            android:id="@+id/key2"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp4"
+            android:text="2\nABC" />
+
+        <Button
+            android:id="@+id/key3"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginLeft="@dimen/dp4"
+            android:text="3\nDEF" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key4"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginRight="@dimen/dp4"
+            android:nextFocusLeft="@+id/key4"
+            android:text="4\nGHI" />
+
+        <Button
+            android:id="@+id/key5"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp4"
+            android:text="5\nJKL" />
+
+        <Button
+            android:id="@+id/key6"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginLeft="@dimen/dp4"
+            android:text="6\nMNO" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp8"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/key7"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginRight="@dimen/dp4"
+            android:nextFocusLeft="@+id/key7"
+            android:text="7\nPQRS" />
+
+        <Button
+            android:id="@+id/key8"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp4"
+            android:text="8\nTUV" />
+
+        <Button
+            android:id="@+id/key9"
+            style="@style/t9_keybord_option_style"
+            android:layout_marginLeft="@dimen/dp4"
+            android:text="9\nWXYZ" />
+
+    </LinearLayout>
+</LinearLayout>

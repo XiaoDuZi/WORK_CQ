@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/icon_user_center_title"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp1080"
+        android:layout_height="@dimen/dp400"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp100"
+        android:background="@color/red_deep_60"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/img_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/user_info_head_icon"
+                android:layout_width="@dimen/dp113"
+                android:layout_height="@dimen/dp113"
+                android:layout_gravity="center"
+                android:background="@drawable/change_button_lock_bg_select2"
+                android:src="@mipmap/my_info" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_info_head_icon"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="点击头像更换"
+                android:textColor="@color/gray_a6"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp500"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_toRightOf="@+id/img_layout"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/key_no_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp25"
+                tools:text="智能卡号:9950000002384049" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp20">
+
+                <TextView
+                    android:id="@+id/user_balance_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    tools:text="账号余额:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp25" />
+
+                <Button
+                    android:id="@+id/user_recharge_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/change_button_lock_bg_select"
+                    android:text="充值"
+                    android:textColor="@drawable/selector_item_text_color_for_focus"
+                    android:textSize="@dimen/sp20" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/register_integral_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    tools:text="签到积分:"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp25" />
+
+                <Button
+                    android:id="@+id/user_register_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/change_button_lock_bg_select"
+                    android:text="签到"
+                    android:textColor="@drawable/selector_item_text_color_for_focus"
+                    android:textSize="@dimen/sp20" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.cq.ln.views.FixGridLayout
+        android:id="@+id/linearlayout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+    </com.cq.ln.views.FixGridLayout>
+
+</LinearLayout>

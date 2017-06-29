@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentWarp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp420"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+
+        <View
+            android:id="@+id/lineTop"
+            style="@style/dialog_Line" />
+
+        <TextView
+            android:id="@+id/myBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp25"
+            android:background="@drawable/bg_txt_orange_soil"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="我的余额:00元" />
+
+        <TextView
+            android:id="@+id/txtTltie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp25"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp10"
+            android:text="提示"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp30" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTltie"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp25"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingRight="@dimen/dp50"
+            android:text="您的余额不足,请及时充值哦."
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp25" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingRight="@dimen/dp50"
+            android:text="@string/string_order_le_tip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/dp50"
+            android:gravity="left"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/dp50"
+            android:paddingRight="@dimen/dp50"
+            android:text="@string/string_order_le_tip_"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp25"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_leftleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/change_button_lock_bg_select"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="营业厅充值"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20" />
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/change_button_lock_bg_select"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="支付宝充值"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20" />
+
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/change_button_lock_bg_select"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="下次再说"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20" />
+        </LinearLayout>
+
+        <View
+            style="@style/dialog_Line"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

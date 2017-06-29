@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:paddingBottom="@dimen/dp5"
+    android:paddingTop="@dimen/dp5"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_ImageView"
+        style="@style/setEnableFocusNO"
+        android:layout_width="@dimen/dp100"
+        android:layout_height="@dimen/dp100"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:scaleType="fitXY"
+        android:src="@mipmap/music_def" />
+
+    <RelativeLayout
+        style="@style/setEnableFocusNO"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_nameOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="情感的禁区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp22" />
+
+        <TextView
+            android:id="@+id/item_nameTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp6"
+            android:text="刘德华"
+            android:textColor="@color/gray_white"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+</LinearLayout>

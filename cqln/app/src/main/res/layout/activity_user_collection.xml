@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.cq.ln.activity.UserCenterActivity">
+    <!--时间问题,暂无使用-->
+    <!--
+        <FrameLayout
+            android:id="@+id/left_layout"
+            android:layout_width="@dimen/dp244"
+            android:layout_height="match_parent"
+            android:background="@mipmap/user_center_left"
+            android:paddingLeft="@dimen/dp66"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/setEnableFocusNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp66"
+                android:layout_marginTop="@dimen/dp50"
+                android:src="@mipmap/page_pre_have_nonu" />
+
+            <Button
+                android:id="@+id/btnMusicStyle"
+                style="@style/focusAndSetTag"
+                android:layout_width="@dimen/dp158"
+                android:layout_height="@dimen/dp62"
+                android:layout_marginTop="@dimen/dp100"
+                android:background="@null"
+                android:nextFocusDown="@+id/btnSigner"
+                android:nextFocusUp="@+id/btnOnlineSearch"
+                android:text="最近播放"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSigner"
+                style="@style/focusAndSetTag"
+                android:layout_width="@dimen/dp158"
+                android:layout_height="@dimen/dp62"
+                android:layout_marginTop="@dimen/dp172"
+                android:background="@null"
+                android:nextFocusDown="@+id/btnOnlineSearch"
+                android:nextFocusRight="@+id/danqu_play"
+                android:text="收藏"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnOnlineSearch"
+                style="@style/focusAndSetTag"
+                android:layout_width="@dimen/dp158"
+                android:layout_height="@dimen/dp62"
+                android:layout_marginTop="@dimen/dp244"
+                android:background="@null"
+                android:nextFocusDown="@+id/btnMusicStyle"
+                android:text="个人信息"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <ImageView
+                style="@style/setEnableFocusNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp66"
+                android:layout_marginTop="@dimen/dp650"
+                android:src="@mipmap/page_next_have_nonu" />
+
+        </FrameLayout>
+
+        &lt;!&ndash;个人信息&ndash;&gt;
+        <FrameLayout
+            android:id="@+id/right_layout_userInfo"
+            android:layout_width="@dimen/dp1036"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp244"
+            android:visibility="gone">
+
+            &lt;!&ndash; <ImageView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/dp30"
+                 android:gravity="center_horizontal"
+                 android:src="@mipmap/my_info"
+                 android:layout_marginLeft="@dimen/dp360"
+                 android:visibility="gone"/>&ndash;&gt;
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@mipmap/my_info"
+                android:gravity="center_horizontal"
+                android:text="个人中心"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp40"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="@dimen/dp580"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp200"
+                android:layout_marginTop="@dimen/dp120">
+
+                <LinearLayout
+                    android:id="@+id/user_infos_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/username_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:text="户主名:XXXXX"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp25" />
+
+                    <TextView
+                        android:id="@+id/keyno_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:text="智能卡号:XXXXX"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp25" />
+
+                    <TextView
+                        android:id="@+id/area_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:text="地区:XXXXX"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp25" />
+
+                    <TextView
+                        android:id="@+id/gdNo_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:text="广电号:XXXXX"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp25" />
+
+                    <TextView
+                        android:id="@+id/boxInfo_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:text="机顶盒信息:XXXXX"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp25" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/right_layout_other"
+            android:layout_width="@dimen/dp1036"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp244"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/user_center_left"
+                android:visibility="visible">
+
+                <FrameLayout
+                    android:id="@+id/right_layout_other_middle"
+                    android:layout_width="@dimen/dp166"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp50"
+                    android:background="@mipmap/user_center_left"
+                    android:visibility="invisible">
+
+                    <Button
+                        android:id="@+id/zhuanji_play"
+                        style="@style/focusAndSetTag"
+                        android:layout_width="@dimen/dp158"
+                        android:layout_height="@dimen/dp62"
+                        android:layout_marginTop="@dimen/dp100"
+                        android:background="@null"
+                        android:nextFocusDown="@+id/danqu_play"
+                        android:nextFocusLeft="@+id/btnSigner"
+                        android:nextFocusRight="@+id/listViewFilter3"
+                        android:nextFocusUp="@+id/danqu_play"
+                        android:text="专辑播放"
+                        android:textColor="@drawable/selector_item_text_color_for_focus"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/danqu_play"
+                        style="@style/focusAndSetTag"
+                        android:layout_width="@dimen/dp158"
+                        android:layout_height="@dimen/dp62"
+                        android:layout_marginTop="@dimen/dp170"
+                        android:background="@null"
+                        android:nextFocusDown="@+id/zhuanji_play"
+                        android:nextFocusLeft="@+id/btnSigner"
+                        android:nextFocusRight="@+id/listViewFilter2"
+                        android:nextFocusUp="@+id/zhuanji_play"
+                        android:text="单曲播放"
+                        android:textColor="@drawable/selector_item_text_color_for_focus"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/listView_ViewTreeObserver"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp200"
+                    android:layout_marginTop="@dimen/dp80">
+
+                    <ImageView
+                        android:id="@+id/ListView_Image_Page_Pre"
+                        style="@style/setEnableFocusNO"
+                        android:layout_width="@dimen/dp260"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp200"
+                        android:layout_marginTop="@dimen/dp0"
+                        android:background="@null"
+                        android:src="@mipmap/page_pre_have_nonu" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:id="@+id/listViewFilter2"
+                            android:layout_width="@dimen/dp550"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dp110"
+                            android:layout_marginLeft="@dimen/dp100"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="@dimen/dp0"
+                            android:listSelector="@android:color/transparent"
+                            android:nextFocusLeft="@+id/danqu_play"
+                            android:scrollbars="none"
+                            android:visibility="visible" />&lt;!&ndash;单曲&ndash;&gt;
+                        <ListView
+                            android:id="@+id/listViewFilter4"
+                            android:layout_width="@dimen/dp550"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/dp110"
+                            android:layout_marginLeft="@dimen/dp100"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:divider="@android:color/transparent"
+                            android:dividerHeight="@dimen/dp0"
+                            android:listSelector="@android:color/transparent"
+                            android:nextFocusLeft="@+id/zhuanji_play"
+                            android:scrollbars="none"
+                            android:visibility="gone" />&lt;!&ndash;专辑&ndash;&gt;
+                    </FrameLayout>
+
+                    <ListView
+                        android:id="@+id/listViewFilter3"
+                        android:layout_width="@dimen/dp550"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dp110"
+                        android:layout_marginLeft="@dimen/dp100"
+                        android:layout_marginTop="@dimen/dp20"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="@dimen/dp0"
+                        android:listSelector="@android:color/transparent"
+                        android:nextFocusLeft="@+id/btnMusicStyle"
+                        android:scrollbars="none"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/dp260"
+                        android:layout_height="@dimen/dp80"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:layout_marginLeft="@dimen/dp200"
+                        android:layout_marginTop="@dimen/dp520">
+
+                        <ImageView
+                            android:id="@+id/image_Page_Next"
+                            style="@style/setEnableFocusNO"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:background="@null"
+                            android:paddingBottom="@dimen/dp5"
+                            android:src="@mipmap/page_next_have_more" />
+
+                        <TextView
+                            android:id="@+id/text_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/image_Page_Next"
+                            android:layout_centerInParent="true"
+                            android:drawableLeft="@mipmap/page_flip"
+                            android:gravity="center"
+                            android:text="上下翻页"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp20" />
+
+                        <TextView
+                            android:id="@+id/txtSearchPageNav"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/image_Page_Next"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@+id/text_tv"
+                            android:gravity="center"
+                            android:text="1/50"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp20" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>-->
+
+</FrameLayout>

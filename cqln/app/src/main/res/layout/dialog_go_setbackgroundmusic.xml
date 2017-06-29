@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/setbg_parentWarp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_order_dialog_transparent_"
+        android:orientation="vertical" >
+
+        <!-- 按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp20"
+                    android:gravity="center"
+                    android:padding="@dimen/dp4"
+                    android:text="设置我的背景音乐"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp30" />
+                <Button
+                    android:id="@+id/setOnwer"
+                    android:layout_width="@dimen/dp350"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/change_button_lock_bg_select"
+                    android:textSize="@dimen/sp30"
+                    android:textColor="@color/white"
+                    android:text="设置当前音乐为背景音乐"/>
+            </LinearLayout>
+             <View style="@style/line" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/friendtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp20"
+                        android:gravity="center"
+                        android:padding="@dimen/dp4"
+                        android:text="设置朋友的背景音乐"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp30" />
+                    <EditText
+                        android:id="@+id/setfriend"
+                        android:layout_width="@dimen/dp350"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:textSize="@dimen/sp30"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:hint="请输入朋友的智能卡号"/>
+                </LinearLayout>
+        </LinearLayout>
+            <View style="@style/line" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:padding="@dimen/dp10"
+                android:background="@drawable/change_button_lock_bg_select"
+                android:text="发送设置"
+                android:id="@+id/center"
+                android:layout_width="@dimen/dp350"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"/>
+
+        </LinearLayout>
+            </LinearLayout>
+        <View style="@style/line"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:text="设置成功!"
+                android:id="@+id/bottom"
+                android:layout_width="@dimen/dp350"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_white"
+                android:textSize="@dimen/sp20"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

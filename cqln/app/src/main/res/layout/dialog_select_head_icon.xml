@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentWarp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent"
+    android:descendantFocusability="afterDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_order_dialog_transparent_"
+        android:orientation="vertical">
+
+        <!-- 标题 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp20"
+                android:gravity="center"
+                android:padding="@dimen/dp4"
+                android:text="请选择你的头像"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp30" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/sp20"
+                android:background="@color/gray_a6" />
+
+            <!-- 中间的内容 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead1"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="0"
+                    app:head="@mipmap/head_1" />
+
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead2"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="1"
+                    app:head="@mipmap/head_2" />
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead3"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="2"
+                    app:head="@mipmap/head_3" />
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead4"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="3"
+                    app:head="@mipmap/head_4" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead5"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="4"
+                    app:head="@mipmap/head_5" />
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead6"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="5"
+                    app:head="@mipmap/head_6" />
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead7"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="6"
+                    app:head="@mipmap/head_7" />
+
+                <com.cq.ln.views.ItemHead
+                    android:id="@+id/ItemHead8"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:tag="7"
+                    app:head="@mipmap/head_8" />
+
+            </LinearLayout>
+
+            <!-- <GridView
+                 android:id="@+id/head_icon_gridview"
+                 android:layout_width="@dimen/dp500"
+                 android:layout_height="@dimen/dp180"
+                 android:layout_gravity="center"
+                 android:background="@color/transparent"
+                 android:gravity="center"
+                 android:horizontalSpacing="@dimen/dp10"
+                 android:listSelector="@color/transparent"
+                 android:numColumns="4"
+                 android:scrollbars="none"
+                 android:verticalSpacing="@dimen/dp10"
+                 android:visibility="gone" />--><!-- android:layout_marginLeft="@dimen/dp200"
+                android:layout_marginRight="@dimen/dp200"-->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp30"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEnter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp20"
+                android:background="@drawable/change_button_lock_bg_select"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="确认"
+                android:textColor="@drawable/selector_item_text_color_for_focus"
+                android:textSize="@dimen/sp20" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

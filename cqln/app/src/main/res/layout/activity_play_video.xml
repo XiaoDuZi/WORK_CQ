@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/activity_RootView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <!-- 视频播放的界面 -->
+    <RelativeLayout
+        android:id="@+id/rl_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/iv_video_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_bg"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/dp3"
+            >
+
+            <TextView
+                android:id="@+id/tv_dur_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp20"
+                android:text="00:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp25"/>
+
+            <SeekBar
+                android:id="@+id/video_player_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginRight="@dimen/dp15"
+                android:layout_toLeftOf="@+id/tv_dur_right"
+                android:layout_toRightOf="@+id/tv_dur_left"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:max="1000"
+                android:progress="1"
+                android:progressBackgroundTint="@color/colorPrimaryDark"
+                android:progressTint="@color/recentplay_color"
+                android:secondaryProgress="0"
+                android:secondaryProgressTint="#565657"
+                android:thumb="@drawable/seekbar_thumb"/>
+
+            <TextView
+                android:id="@+id/tv_dur_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:text="00:00"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp25"/>
+
+            <ImageButton
+                android:id="@+id/vedio_player_pause"
+                style="@style/focusAndSetTag"
+                android:layout_width="@dimen/dp105"
+                android:layout_height="@dimen/dp105"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_play_quick"
+                android:src="@mipmap/player_play"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/thirdty_black"
+                android:padding="@dimen/dp15"
+                android:paddingLeft="@dimen/dp25"
+                android:text="标题标题"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp25"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_play_quick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_play_quick"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/iv_quick_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/quick_back"
+                />
+
+            <TextView
+                android:id="@+id/tv_quick_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:text="00:30:15/02:12:40"
+                android:textSize="@dimen/sp50"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_play_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/six_black"
+        android:visibility="gone"
+        >
+
+        <ListView
+            android:id="@+id/lv_play"
+            android:layout_width="@dimen/dp350"
+            android:layout_height="@dimen/dp500"
+            android:layout_gravity="left"
+            android:background="@color/fivety_black"
+            android:listSelector="@color/recentplay_color"
+            android:layout_centerInParent="true"
+            >
+        </ListView>
+
+    </RelativeLayout>
+
+</FrameLayout>

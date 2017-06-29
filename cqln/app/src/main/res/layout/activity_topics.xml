@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/activity_RootView"
+             style="@style/setEnableFocusNO"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:clipChildren="false"
+             android:clipToPadding="false"
+             android:background="@mipmap/home_bg"
+             tools:context="com.cq.ln.activity.TopicsActivity">
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/home_bg"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <com.cq.ln.views.SmoothHorizontalScrollView
+        style="@style/setEnableFocusNO"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp340"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/dp80"
+        android:paddingLeft="@dimen/dp80"
+        android:paddingRight="@dimen/dp40"
+        android:paddingTop="@dimen/dp40"
+        app:fadingEdge="@dimen/dp500">
+
+        <com.cq.ln.views.TVRecyclerView
+            android:id="@+id/topics_Recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingBottom="@dimen/dp50"
+            android:paddingLeft="@dimen/dp40"
+            android:paddingRight="@dimen/dp40"
+            android:paddingTop="@dimen/dp20" />
+    </com.cq.ln.views.SmoothHorizontalScrollView>
+
+</FrameLayout>

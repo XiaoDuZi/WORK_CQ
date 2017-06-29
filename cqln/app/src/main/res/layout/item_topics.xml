@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp15"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/item_Topics_ImageButton"
+        style="@style/focusAndSetTag"
+        android:layout_width="@dimen/dp185"
+        android:layout_height="@dimen/dp235"
+        android:background="@mipmap/default_small"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:nextFocusUp="@+id/RBtnFree" />
+
+
+</LinearLayout>

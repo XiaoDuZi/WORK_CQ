@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.cq.ln.activity.UserCenterActivity">
+
+
+    <FrameLayout
+        android:id="@+id/Left_Warp_DVD"
+        android:layout_width="@dimen/dp244"
+        android:layout_height="match_parent"
+        android:background="@mipmap/user_center_left"
+        android:paddingLeft="@dimen/dp66">
+
+        <ImageView
+            style="@style/setEnableFocusNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp66"
+            android:layout_marginTop="@dimen/dp50"
+            android:src="@mipmap/page_pre_have_nonu" />
+
+        <Button
+            android:id="@+id/btnMusicStyle"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp158"
+            android:layout_height="@dimen/dp62"
+            android:layout_marginTop="@dimen/dp100"
+            android:background="@null"
+            android:text="最近播放"
+            android:textColor="@drawable/selector_item_text_color_for_focus"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSigner"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp158"
+            android:layout_height="@dimen/dp62"
+            android:layout_marginTop="@dimen/dp172"
+            android:background="@null"
+            android:text="收藏"
+            android:textColor="@drawable/selector_item_text_color_for_focus"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btnNewsDVD"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp158"
+            android:layout_height="@dimen/dp62"
+            android:layout_marginTop="@dimen/dp244"
+            android:background="@null"
+            android:text="个人信息"
+            android:textColor="@drawable/selector_item_text_color_for_focus"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+        <ImageView
+            style="@style/setEnableFocusNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp66"
+            android:layout_marginTop="@dimen/dp650"
+            android:src="@mipmap/page_next_have_nonu" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginLeft="@dimen/dp500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="@android:color/transparent"
+        android:text="个人中心"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp40"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
+
+    <!--个人信息-->
+    <FrameLayout
+        android:id="@+id/change_user_info_layout"
+        android:layout_marginLeft="@dimen/dp500"
+        android:layout_width="@dimen/dp600"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp100"
+        android:visibility="visible"
+        >
+     <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="aaaaaaa"-->
+        <!--android:textSize="@dimen/dp50"/>-->
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/show_collection_or_play"
+        android:layout_width="@dimen/dp166"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:layout_marginLeft="@dimen/dp300">
+        <Button
+            style="@style/focusAndSetTag"
+            android:textColor="@drawable/selector_item_text_color_for_focus"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            android:background="@null"
+            android:id="@+id/zhuanji_play"
+            android:layout_width="@dimen/dp158"
+            android:layout_height="@dimen/dp62"
+            android:layout_marginTop="@dimen/dp100"
+            android:text="专辑播放"/>
+        <Button
+            style="@style/focusAndSetTag"
+            android:textColor="@drawable/selector_item_text_color_for_focus"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            android:background="@null"
+            android:id="@+id/danqu_play"
+            android:layout_width="@dimen/dp158"
+            android:layout_height="@dimen/dp62"
+            android:layout_marginTop="@dimen/dp170"
+            android:text="单曲播放"/>
+    </FrameLayout>
+
+    <!--切换界面开始-->
+    <FrameLayout
+        android:layout_marginLeft="@dimen/dp350"
+        android:layout_width="@dimen/dp600"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp100"
+        android:visibility="visible">
+        <FrameLayout
+            android:id="@+id/frameLayout_common_to_show3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+        <FrameLayout
+            android:id="@+id/frameLayout_common_to_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+        <FrameLayout
+            android:id="@+id/frameLayout_common_to_show2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+      <!--<TextView-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="match_parent"-->
+          <!--android:text="bbbbbbbbbbbbbbbbbbb"-->
+          <!--android:textSize="@dimen/dp50"/>-->
+    </FrameLayout>
+
+</FrameLayout>

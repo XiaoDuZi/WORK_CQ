@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="cc">#cccccc</color>
+
+    <color name="recentplay_color">#2EA7E0</color>
+    <color name="collection_color">#82B01C</color>
+    <color name="search_color">#F87A01</color>
+
+    <color name="red">#FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_a6">#A6A6A6</color>
+    <color name="sslife_title_color">#A6A6A6</color>
+    <color name="sslife_title_selector_color">#FFFFFF</color>
+
+    <color name="gray_white">#848080</color>
+    <color name="gray_red">#4F4546</color>
+    <!--深红色 背景-->
+    <color name="red_deep">#1F0101</color>
+
+    <!--深红色 背景80%透明度-->
+    <color name="red_deep_80">#331F0101</color>
+
+
+    <!--深红色 背景70%透明度-->
+    <color name="red_deep_70">#4C1F0101</color>
+
+    <!--深红色 背景60%透明度-->
+    <color name="red_deep_60">#661F0101</color>
+
+    <!-- 30%透明度 -->
+    <color name="thirdty_black">#B3000000</color>
+    <!-- 40%透明度 -->
+    <color name="fourty_black">#99000000</color>
+    <!-- 20%透明度 -->
+    <color name="twenty_black">#CC000000</color>
+    <!-- 10%透明度 -->
+    <color name="ten_black">#E6000000</color>
+    <!-- 50%透明度 -->
+    <color name="fivety_black">#80000000</color>
+    <!-- 5%透明度 -->
+    <color name="five_black">#F3000000</color>
+    <!-- 2%透明度 -->
+    <color name="two_black">#FA000000</color>
+    <!-- 90%透明度 -->
+    <color name="ninety_black">#19000000</color>
+    <!-- 95%透明度 -->
+    <color name="nineteenfive_black">#0C000000</color>
+    <!-- 98%透明度 -->
+    <color name="nineteeneigh_black">#05000000</color>
+    <!-- 80%透明度 -->
+    <color name="eighty_black">#33000000</color>
+    <!-- 70%透明度 -->
+    <color name="seventy_black">#4C000000</color>
+    <!-- 60%透明度 -->
+    <color name="six_black">#66000000</color>
+    <color name="black">#ff000000</color>
+
+
+    <!-- 30%透明度 -->
+    <color name="thirdty_white">#B3FFFFFF</color>
+    <!-- 40%透明度 -->
+    <color name="fourty_white">#99FFFFFF</color>
+    <!-- 20%透明度 -->
+    <color name="twenty_white">#CCFFFFFF</color>
+    <!-- 10%透明度 -->
+    <color name="ten_white">#E6FFFFFF</color>
+    <!-- 50%透明度 -->
+    <color name="fivety_white">#80FFFFFF</color>
+    <!-- 5%透明度 -->
+    <color name="five_white">#F3FFFFFF</color>
+    <!-- 2%透明度 -->
+    <color name="two_white">#FAFFFFFF</color>
+    <!-- 90%透明度 -->
+    <color name="ninety_white">#19FFFFFF</color>
+    <!-- 95%透明度 -->
+    <color name="nineteenfive_white">#0CFFFFFF</color>
+    <!-- 98%透明度 -->
+    <color name="nineteeneigh_white">#05FFFFFF</color>
+    <!-- 80%透明度 -->
+    <color name="eighty_white">#33FFFFFF</color>
+    <!-- 85%透明度 -->
+    <color name="eightyFive_white">#26FFFFFF</color>
+    <!-- 70%透明度 -->
+    <color name="seventy_white">#4CFFFFFF</color>
+    <!-- 60%透明度 -->
+    <color name="six_white">#66FFFFFF</color>
+
+    <color name="process_backgroud_color">#230507</color>
+    <color name="secondprocess_color">#fca09f</color>
+    <color name="color_d30601">#d30601</color>
+
+    <color name="title_color">#666666</color>
+    <color name="line_color">#e8e8e8</color>
+    <color name="gray">#eeeeee</color><!-- #dcdcdc -->
+    <color name="transparent_7">#70000000</color>
+    <color name="transparent_9">#90000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

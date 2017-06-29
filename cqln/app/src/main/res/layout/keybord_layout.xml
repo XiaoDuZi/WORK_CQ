@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/letter_A"
+                style="@style/keybord_letter_style"
+                android:nextFocusLeft="@+id/letter_A"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/letter_B"
+                style="@style/keybord_letter_style"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/letter_C"
+                style="@style/keybord_letter_style"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/letter_D"
+                style="@style/keybord_letter_style"
+                android:text="D" />
+
+            <Button
+                android:id="@+id/letter_E"
+                style="@style/keybord_letter_style"
+                android:text="E" />
+
+            <Button
+                android:id="@+id/letter_F"
+                style="@style/keybord_letter_style"
+                android:text="F" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/letter_G"
+                style="@style/keybord_letter_style"
+                android:nextFocusLeft="@+id/letter_G"
+                android:text="G" />
+
+            <Button
+                android:id="@+id/letter_H"
+                style="@style/keybord_letter_style"
+                android:text="H" />
+
+            <Button
+                android:id="@+id/letter_I"
+                style="@style/keybord_letter_style"
+                android:text="I" />
+
+            <Button
+                android:id="@+id/letter_J"
+                style="@style/keybord_letter_style"
+                android:text="J" />
+
+            <Button
+                android:id="@+id/letter_K"
+                style="@style/keybord_letter_style"
+                android:text="K" />
+
+            <Button
+                android:id="@+id/letter_L"
+                style="@style/keybord_letter_style"
+                android:text="L" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/letter_M"
+                style="@style/keybord_letter_style"
+                android:nextFocusLeft="@+id/letter_M"
+                android:text="M" />
+
+            <Button
+                android:id="@+id/letter_N"
+                style="@style/keybord_letter_style"
+                android:text="N" />
+
+            <Button
+                android:id="@+id/letter_O"
+                style="@style/keybord_letter_style"
+                android:text="O" />
+
+            <Button
+                android:id="@+id/letter_P"
+                style="@style/keybord_letter_style"
+                android:text="P" />
+
+            <Button
+                android:id="@+id/letter_Q"
+                style="@style/keybord_letter_style"
+                android:text="Q" />
+
+            <Button
+                android:id="@+id/letter_R"
+                style="@style/keybord_letter_style"
+                android:text="R" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/letter_S"
+                style="@style/keybord_letter_style"
+                android:nextFocusLeft="@+id/letter_S"
+                android:text="S" />
+
+            <Button
+                android:id="@+id/letter_T"
+                style="@style/keybord_letter_style"
+                android:text="T" />
+
+            <Button
+                android:id="@+id/letter_U"
+                style="@style/keybord_letter_style"
+                android:text="U" />
+
+            <Button
+                android:id="@+id/letter_V"
+                style="@style/keybord_letter_style"
+                android:text="V" />
+
+            <Button
+                android:id="@+id/letter_W"
+                style="@style/keybord_letter_style"
+                android:text="W" />
+
+            <Button
+                android:id="@+id/letter_X"
+                style="@style/keybord_letter_style"
+                android:text="X" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/letter_Y"
+                style="@style/keybord_letter_style"
+                android:nextFocusLeft="@+id/letter_Y"
+                android:text="Y" />
+
+            <Button
+                android:id="@+id/letter_Z"
+                style="@style/keybord_letter_style"
+                android:text="Z" />
+
+            <Button
+                android:id="@+id/num_1"
+                style="@style/keybord_letter_style"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/num_2"
+                style="@style/keybord_letter_style"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/num_3"
+                style="@style/keybord_letter_style"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/num_4"
+                style="@style/keybord_letter_style"
+                android:text="4" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/num_5"
+                style="@style/keybord_letter_style"
+                android:nextFocusLeft="@+id/num_5"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/num_6"
+                style="@style/keybord_letter_style"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/num_7"
+                style="@style/keybord_letter_style"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/num_8"
+                style="@style/keybord_letter_style"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/num_9"
+                style="@style/keybord_letter_style"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/num_0"
+                style="@style/keybord_letter_style"
+                android:text="0" />
+        </TableRow>
+
+        <TableRow>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/string_space"
+            style="@style/keybord_option_style"
+            android:nextFocusLeft="@+id/string_space"
+            android:text="空格" />
+
+        <Button
+            android:id="@+id/string_dele"
+            style="@style/keybord_option_style"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/string_clear"
+            style="@style/keybord_option_style"
+            android:text="清空" />
+
+    </LinearLayout>
+</LinearLayout>

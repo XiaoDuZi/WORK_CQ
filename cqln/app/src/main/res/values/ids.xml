@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--首页的实体绑到控件-->
+    <item name="tag_for_MainPage_Bean" type="id" />
+
+    <item name="id_suspend" type="id" />
+
+    <!--标识button需要保持颜色块-->
+    <item name="tag_for_button_is_keeping_color" type="id" />
+    <item name="id_for_musicPlay" type="id" />
+    <item name="Tag_for_search_LeftFilterList_Databean" type="id" />
+
+    <!--绑定当前第几页面-->
+    <item name="Tag_for_search_LeftFilterList_Releaty_currentPage" type="id" />
+
+    <!--首页绑定关联View-->
+    <item name="TAG_FOR_MAIN_RIGHT_VIEW" type="id" />
+    <!--键盘绑定tag-->
+    <item name="tag_for_letter" type="id" />
+    <!--播放器暂停,播放状态-->
+    <item name="tag_for_player_PlayOrPause" type="id" />
+    <!--循环模式-->
+    <item name="tag_for_player_LooperMode" type="id" />
+
+
+    <item name="tag_for_special_tj" type="id" />
+
+    <item type="id" name="framLayoutId">false</item>
+
+</resources>

@@ -1,0 +1,108 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Fragment_RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp45"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:paddingTop="@dimen/viewpagerContentPaddingTop40">
+
+        <ImageButton
+            android:id="@+id/effvip_One"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp454"
+            android:layout_height="@dimen/dp294"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@mipmap/default_big"
+            android:nextFocusUp="@+id/RBtnVip" />
+
+
+        <ImageButton
+            android:id="@+id/effvip_Two"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp294"
+            android:layout_marginLeft="@dimen/dp484"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@mipmap/default_small"
+            android:nextFocusUp="@+id/RBtnVip" />
+
+        <ImageButton
+            android:id="@+id/effvip_Three"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp294"
+            android:layout_marginLeft="@dimen/dp719"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@mipmap/default_small"
+            android:nextFocusUp="@+id/RBtnVip" />
+
+        <ImageButton
+            android:id="@+id/effvip_Four"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp294"
+            android:layout_marginLeft="@dimen/dp954"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@mipmap/default_small"
+            android:nextFocusUp="@+id/RBtnVip" />
+
+
+        <ImageButton
+            android:id="@+id/effvip_Five"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp330"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effvip_Six"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp250"
+            android:layout_marginTop="@dimen/dp330"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effvip_Seven"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp484"
+            android:layout_marginTop="@dimen/dp330"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effvip_Eight"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp719"
+            android:layout_marginTop="@dimen/dp330"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effvip_Nine"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp954"
+            android:layout_marginTop="@dimen/dp330"
+            android:background="@mipmap/default_small" />
+
+    </FrameLayout>
+
+
+</FrameLayout>

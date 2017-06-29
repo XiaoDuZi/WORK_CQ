@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Fragment_RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp45"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:paddingTop="@dimen/viewpagerContentPaddingTop40">
+
+        <ImageButton
+            android:id="@+id/effHandpick_one"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp454"
+            android:layout_height="@dimen/dp284"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@mipmap/default_big"
+            />
+
+        <ImageButton
+            android:id="@+id/effHandpick_two"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp284"
+            android:layout_marginLeft="@dimen/dp484"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@mipmap/default_small"
+            />
+
+        <ImageButton
+            android:id="@+id/effHandpick_three"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp284"
+            android:layout_marginLeft="@dimen/dp719"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@mipmap/default_small"
+            />
+
+        <ImageButton
+            android:id="@+id/effHandpick_four"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp284"
+            android:layout_marginLeft="@dimen/dp954"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@mipmap/default_small"
+            />
+
+
+        <ImageButton
+            android:id="@+id/effHandpick_Five"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp310"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effHandpick_Six"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp250"
+            android:layout_marginTop="@dimen/dp310"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effHandpick_Seven"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp484"
+            android:layout_marginTop="@dimen/dp310"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effHandpick_eight"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp719"
+            android:layout_marginTop="@dimen/dp310"
+            android:background="@mipmap/default_small" />
+
+        <ImageButton
+            android:id="@+id/effHandpick_Nine"
+            style="@style/focusAndSetTag"
+            android:layout_width="@dimen/dp220"
+            android:layout_height="@dimen/dp140"
+            android:layout_marginLeft="@dimen/dp954"
+            android:layout_marginTop="@dimen/dp310"
+            android:background="@mipmap/default_small" />
+
+    </FrameLayout>
+
+</FrameLayout>

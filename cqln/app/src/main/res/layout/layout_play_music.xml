@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:hifi="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ll_play_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:background="@color/transparent"
+                android:orientation="horizontal"
+                style="@style/setEnableFocusNO"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_music_info"
+        style="@style/focusAndSetTag"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp90"
+        android:background="@drawable/selector_button_border"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp10"
+        android:paddingLeft="@dimen/dp60"
+        android:paddingRight="@dimen/dp20"
+        android:paddingTop="@dimen/dp10"
+        >
+
+        <TextView
+            android:id="@+id/tv_songName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无歌曲播放"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20"
+            android:layout_centerVertical="true"
+            android:maxLines="1"
+            android:minWidth="@dimen/dp200"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp50"
+        android:background="@color/transparent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_image_bg"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:src="@mipmap/cd_bg"/>
+
+        <com.cq.ln.views.RoundImageView
+            android:id="@+id/Image_Big"
+            hifi:roundHeight="@dimen/dp25"
+            hifi:roundWidth="@dimen/dp25"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:scaleType="fitXY"
+            android:src="@mipmap/default_big"/>
+
+        <ImageView
+            android:id="@+id/iv_little_icon"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/cd_center"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

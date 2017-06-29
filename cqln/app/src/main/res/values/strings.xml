@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagForFocus">tagForFocus</string>
+    <string name="app_name">六百学堂</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="test_tip"></string>
+    <string name="string_child_song" />
+    <!--不需要本地标题-->
+    <string name="string_free"></string>
+    <string name="string_nation"></string>
+    <string name="string_jazz"></string>
+    <string name="string_class"></string>
+    <string name="string_popular"></string>
+    <string name="string_hifi"></string>
+    <string name="string_recommend"></string>
+
+    <string name="txtRecentPlay">最近播放</string>
+    <string name="string_connectServiceTimeOut">连接服务器超时.</string>
+    <string name="string_NetWorderror">网络不给力,请稍后再试.</string>
+    <string name="string_noNetWord">暂无网络连接,请稍后再试.</string>
+    <string name="string_innerServiceFailed">网络不给力,请稍后再试.</string>
+    <string name="string_authServiceFailed">网络不给力,请稍后再试.</string>
+    <string name="string_networdException">网络不给力,请稍后再试.</string>
+
+
+    <string name="placeOrder_abstruct">HIFi音乐提供16bit/24bit媲美CD音质的高保真流媒体音乐服务。</string>
+
+    <string name="string_remind_ordertip">温馨提示：该产品订购后马上生效,次月到期自动续订,如需退订,请拨打 96868 咨询。</string>
+
+
+    <string name="string_order_le_tip">您还可以通过淘宝搜索“重庆有线”为账户充值</string>
+    <string name="string_order_le_tip_">温馨提示:充值也可以到附近的营业厅或拨打 96868 </string>
+    <string name="string_96868">对不起,您的余额不足,请充值</string>
+
+
+    <string name="string_black">对不起您是异常用户,如有疑问,请咨询 96868 .</string>
+    <string name="string_error_tip">密码不正确，请重新输入，如忘记密码，请拨打 96868 查询。</string>
+
+
+    <string name="string_disable">您的广电账户已欠费停用，继续使用HiFi高品质音乐服务，请试听结束后充值.</string>
+
+    <string name="string_order_succeed" >恭喜您成功订购HIFI媲美CD音质的高保真流媒体音乐服务。</string>
+    <string name="string_vip" />
+
+
+</resources>

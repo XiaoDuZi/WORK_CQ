@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Fragment_RootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false">
+
+    <ImageView
+        android:layout_marginLeft="@dimen/dp150"
+        android:id="@+id/ListView_Image_Page_Pre"
+        style="@style/setEnableFocusNO"
+        android:layout_width="@dimen/dp260"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp0"
+        android:background="@null"
+        android:src="@mipmap/page_pre_have_nonu" />
+
+        <ListView
+            android:layout_marginLeft="@dimen/dp150"
+            android:layout_marginTop="@dimen/dp40"
+            android:id="@+id/listView_filter"
+            android:layout_width="@dimen/dp450"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp200"
+            android:dividerHeight="@dimen/dp0"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            android:visibility="visible"/><!--单曲-->
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp150"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp600"
+        android:layout_width="@dimen/dp260"
+        android:layout_height="@dimen/dp80">
+
+        <ImageView
+            android:id="@+id/image_Page_NextDVD"
+            style="@style/setEnableFocusNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/page_next_have_more"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="@dimen/dp5"/>
+
+        <TextView
+            android:layout_below="@+id/image_Page_NextDVD"
+            android:id="@+id/text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/page_flip"
+            android:layout_centerInParent="true"
+            android:text="上下翻页"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/txtSearchPageNav"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_below="@+id/image_Page_NextDVD"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="1/50"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+    </RelativeLayout>
+
+</FrameLayout>

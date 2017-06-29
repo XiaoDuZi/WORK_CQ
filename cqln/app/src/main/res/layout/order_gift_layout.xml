@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/order_gift_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp30"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/order_gift_img" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/show_balance_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp0"
+            android:text="HiFi音乐包月 标准资费：10元/月"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp5">
+
+            <TextView
+                android:id="@+id/old_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="( 原价：19元/月 )"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp20" />
+
+            <View
+                android:layout_width="@dimen/dp130"
+                android:layout_height="1.5dip"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/order_gift_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@drawable/change_button_lock_bg_select"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/dp0"
+            android:text="马上订购"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+
+</LinearLayout>
